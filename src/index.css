@@ -1,2 +1,76 @@
 @import "tailwindcss";
-@plugin "daisyui";
+
+@plugin "daisyui" {
+  themes: false;
+}
+
+@plugin "daisyui/theme" {
+  name: "adelon";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  /* Arka plan ve yüzeyler */
+  --color-base-100: #f8f7fc;
+  --color-base-200: #ffffff;
+  --color-base-300: #e2e8f0;
+  --color-base-content: #1e293b;
+
+  /* Ana renk - Mor */
+  --color-primary: #7c3aed;
+  --color-primary-content: #ffffff;
+
+  /* Yardımcı renk - Turkuaz */
+  --color-secondary: #06b6d4;
+  --color-secondary-content: #ffffff;
+
+  /* Vurgu rengi - Sarı */
+  --color-accent: #fbbf24;
+  --color-accent-content: #1e293b;
+
+  /* Nötr */
+  --color-neutral: #1e293b;
+  --color-neutral-content: #ffffff;
+
+  /* Durum renkleri */
+  --color-info: #06b6d4;
+  --color-info-content: #ffffff;
+
+  --color-success: #22c55e;
+  --color-success-content: #ffffff;
+
+  --color-warning: #fbbf24;
+  --color-warning-content: #1e293b;
+
+  --color-error: #ef4444;
+  --color-error-content: #ffffff;
+
+  /* Border radius */
+  --radius-selector: 0.5rem;
+  --radius-field: 0.75rem;
+  --radius-box: 1rem;
+
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@theme {
+  /* Font */
+  --font-sans: "Nunito", sans-serif;
+
+  /* Hover renkleri */
+  --color-primary-hover: #6d28d9;
+  --color-secondary-hover: #0891b2;
+  --color-accent-hover: #f59e0b;
+
+  /* Yardımcı metin ve border */
+  --color-text-muted: #64748b;
+  --color-border-soft: #e2e8f0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--color-base-100);
+  color: var(--color-base-content);
+}
