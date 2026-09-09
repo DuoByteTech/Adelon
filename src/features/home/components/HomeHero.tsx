@@ -1,12 +1,13 @@
 import { GraduationCap } from "lucide-react";
 
 import homeHeroImage from "@/assets/images/home/home-hero.png";
+
 import { AppButton } from "@/components/ui/AppButton";
 import { AppText } from "@/components/ui/AppText";
 
 export function HomeHero() {
   return (
-    <section className="py-10 sm:py-14 lg:py-16">
+    <section className="relative pt-4 sm:pt-6 lg:pt-8 lg:pb-10 xl:pb-0">
       <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
         <div>
           <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-secondary/15 px-4 py-2 text-secondary">

@@ -18,14 +18,10 @@ type AppButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 const variantClasses: Record<AppButtonVariant, string> = {
   primary: "bg-violet-600 text-white shadow-sm transition hover:bg-violet-700",
-
   secondary: "bg-cyan-500 text-white shadow-sm transition hover:bg-cyan-600",
-
   accent: "bg-amber-400 text-slate-900 shadow-sm transition hover:bg-amber-500",
-
   outline:
     "border border-violet-300 bg-white text-violet-600 transition hover:bg-violet-50",
-
   ghost:
     "bg-transparent text-slate-700 transition hover:bg-slate-100 hover:text-violet-600",
 };
