@@ -2,6 +2,7 @@ import { HomeHero } from "../components/HomeHero";
 import { HomeLessons } from "../components/HomeLessons";
 import { HomeMotivationBanner } from "../components/HomeMotivationBanner";
 import { HomeQuickAccess } from "../components/HomeQuickAccess";
+import { HomeStats } from "../components/HomeStats";
 
 export function HomePage() {
   return (
@@ -10,6 +11,7 @@ export function HomePage() {
       <HomeQuickAccess />
       <HomeLessons />
       <HomeMotivationBanner />
+      <HomeStats />
     </>
   );
 }

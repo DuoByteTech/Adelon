@@ -5,7 +5,7 @@ import { AppContainer } from "@/components/ui/AppContainer";
 
 export function MainLayout() {
   return (
-    <div className="flex min-h-screen flex-col bg-white">
+    <div className="flex min-h-screen flex-col bg-base-100">
       <Header />
 
       <main className="flex-1">
