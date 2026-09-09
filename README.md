@@ -20,11 +20,11 @@ Mor, sitenin ana rengidir.
 
 Şuralarda kullanılabilir:
 
-* Ana butonlar
-* Menüde seçili olan sayfa
-* Önemli başlıklar
-* İkonlar
-* Önemli alanlar
+- Ana butonlar
+- Menüde seçili olan sayfa
+- Önemli başlıklar
+- İkonlar
+- Önemli alanlar
 
 Butonun üzerine gelindiğinde daha koyu mor kullanılabilir:
 
@@ -40,10 +40,10 @@ Turkuaz özellikle ders ve bilgi alanlarında kullanılacaktır.
 
 Örneğin:
 
-* Ders kartları
-* Bilgi kutuları
-* Bazı ikonlar
-* Küçük renkli alanlar
+- Ders kartları
+- Bilgi kutuları
+- Bazı ikonlar
+- Küçük renkli alanlar
 
 **Hover:** `#0891B2`
 
@@ -57,11 +57,11 @@ Sarı daha çok eğlenceli ve dikkat çekmesi gereken alanlarda kullanılacaktı
 
 Örneğin:
 
-* Oyunlar
-* Puanlar
-* Başarılar
-* Rozetler
-* Önemli küçük bilgiler
+- Oyunlar
+- Puanlar
+- Başarılar
+- Rozetler
+- Önemli küçük bilgiler
 
 **Hover:** `#F59E0B`
 
@@ -115,12 +115,12 @@ Normal açıklama yazıları daha ince kullanılmalıdır.
 
 Örnek:
 
-* Ana başlık: 40px
-* Bölüm başlığı: 32px
-* Alt başlık: 24px
-* Kart başlığı: 20px
-* Normal yazı: 16px
-* Küçük yazı: 14px
+- Ana başlık: 40px
+- Bölüm başlığı: 32px
+- Alt başlık: 24px
+- Kart başlığı: 20px
+- Normal yazı: 16px
+- Küçük yazı: 14px
 
 Normal içeriklerde yazılar çok küçük kullanılmamalıdır.
 
@@ -182,11 +182,11 @@ Bir oyun kartında:
 
 Kartlar:
 
-* Beyaz arka plana sahip olmalı
-* Hafif kenarlığa sahip olmalı
-* Köşeleri yuvarlak olmalı
-* Hafif gölge kullanılmalı
-* İçerikler arasında yeterli boşluk bulunmalı
+- Beyaz arka plana sahip olmalı
+- Hafif kenarlığa sahip olmalı
+- Köşeleri yuvarlak olmalı
+- Hafif gölge kullanılmalı
+- İçerikler arasında yeterli boşluk bulunmalı
 
 Kartların üzerine gelindiğinde kart hafifçe yukarı hareket edebilir.
 
@@ -198,10 +198,10 @@ Bu hareket çok büyük veya dikkat dağıtıcı olmamalıdır.
 
 Sitedeki tasarım elemanlarında benzer köşe yuvarlaklıkları kullanılmalıdır.
 
-* Küçük alanlar: `8px`
-* Butonlar: `12px`
-* Kartlar: `16px`
-* Büyük alanlar: `20px`
+- Küçük alanlar: `8px`
+- Butonlar: `12px`
+- Kartlar: `16px`
+- Büyük alanlar: `20px`
 
 Böylece sitenin tamamı aynı tasarım diline sahip olur.
 
@@ -261,11 +261,11 @@ kullanılacaktır.
 
 Örneğin:
 
-* Dersler
-* Konular
-* Testler
-* Bilgi kartları
-* Etkinlikler
+- Dersler
+- Konular
+- Testler
+- Bilgi kartları
+- Etkinlikler
 
 ### Oyun Alanları
 
@@ -277,11 +277,11 @@ kullanılacaktır.
 
 Örneğin:
 
-* Oyun kartları
-* Puanlar
-* Rozetler
-* Başarılar
-* Oyun başlatma alanları
+- Oyun kartları
+- Puanlar
+- Rozetler
+- Başarılar
+- Oyun başlatma alanları
 
 ---
 
@@ -289,12 +289,12 @@ kullanılacaktır.
 
 Web sitesi genel olarak:
 
-* Canlı
-* Enerjik
-* Modern
-* Eğlenceli
-* Kolay anlaşılır
-* Düzenli
+- Canlı
+- Enerjik
+- Modern
+- Eğlenceli
+- Kolay anlaşılır
+- Düzenli
 
 olmalıdır.
 
@@ -312,16 +312,32 @@ Tasarımda çok fazla animasyon kullanılmamalıdır. Küçük hover hareketleri
 
 Site sadece bilgisayarda değil;
 
-* Telefon
-* Tablet
-* Laptop
-* Masaüstü
+- Telefon
+- Tablet
+- Laptop
+- Masaüstü
 
 ekranlarında düzgün çalışmalıdır.
 
 Butonlar telefonda da kolay tıklanabilir olmalı ve yazılar rahat okunmalıdır.
 
 Kartlar küçük ekranlarda alt alta gelebilir.
+
+---
+
+## 13. UI Component Kullanım Kuralları
+
+Projede tekrar kullanılan tasarım parçaları ortak UI componentleri olarak hazırlanmalıdır.
+
+Amaç, aynı tasarımın farklı sayfalarda tekrar tekrar yazılmasını önlemek ve sitenin tamamında aynı tasarım dilini korumaktır.
+
+Ortak UI componentleri şu klasörde tutulacaktır:
+
+```text
+src/
+└── components/
+    └── ui/
+```
 
 ---
 
