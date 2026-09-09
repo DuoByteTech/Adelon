@@ -1,3 +1,4 @@
+import { AppContainer } from "@/components/ui/AppContainer";
 import { AppLink } from "@/components/ui/AppLink";
 
 export function Header() {
@@ -10,12 +11,10 @@ export function Header() {
   ];
 
   return (
-    <header className="w-full border-b border-gray-100 bg-white">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
-        <AppLink to="/">
-          <span className="text-3xl font-extrabold tracking-tight text-violet-600">
-            Adelon
-          </span>
+    <header className="w-full border-b border-slate-200 bg-white">
+      <AppContainer className="flex h-20 items-center justify-between">
+        <AppLink to="/" variant="brand">
+          Adelon
         </AppLink>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -35,7 +34,7 @@ export function Header() {
             Kayıt Ol
           </AppLink>
         </div>
-      </div>
+      </AppContainer>
     </header>
   );
 }

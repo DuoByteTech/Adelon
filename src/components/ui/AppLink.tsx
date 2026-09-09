@@ -1,7 +1,12 @@
 import type { ReactNode } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-type AppLinkVariant = "default" | "nav" | "outlineButton" | "primaryButton";
+type AppLinkVariant =
+  | "default"
+  | "brand"
+  | "nav"
+  | "outlineButton"
+  | "primaryButton";
 
 type AppLinkProps = {
   to: string;
@@ -12,6 +17,8 @@ type AppLinkProps = {
 
 const variantClasses: Record<AppLinkVariant, string> = {
   default: "text-slate-700 transition-colors hover:text-violet-600",
+
+  brand: "text-3xl font-extrabold tracking-tight text-violet-600",
 
   nav: "relative py-2 text-sm font-medium text-slate-700 transition-colors hover:text-violet-600",
 
