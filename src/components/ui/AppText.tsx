@@ -20,7 +20,7 @@ const variantClasses: Record<AppTextVariant, string> = {
   h3: "text-xl font-bold leading-snug sm:text-2xl",
   cardTitle: "text-xl font-bold leading-snug",
   body: "text-base leading-relaxed",
-  small: "text-sm leading-normal",
+  small: "text-sm leading-normal text-text-muted",
   muted: "text-base leading-relaxed text-text-muted",
 };
 

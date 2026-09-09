@@ -35,7 +35,7 @@ const quickAccessItems = [
 
 export function HomeQuickAccess() {
   return (
-    <section className="relative z-10 mt-4 pb-16 sm:mt-2 lg:-mt-2 xl:-mt-4">
+    <section className="relative z-10 mt-4 sm:mt-2 lg:-mt-2 xl:-mt-4">
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {quickAccessItems.map((item) => (
           <HomeQuickAccessCard key={item.title} {...item} />

@@ -43,7 +43,7 @@ export function HomeQuickAccessCard({
         <AppText variant="cardTitle">{title}</AppText>
 
         <div className="mt-2 flex flex-1 items-end justify-between gap-4">
-          <AppText variant="small" className="max-w-48 text-text-muted">
+          <AppText variant="small" className="max-w-48">
             {description}
           </AppText>
 

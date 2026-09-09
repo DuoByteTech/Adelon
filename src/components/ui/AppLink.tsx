@@ -17,14 +17,10 @@ type AppLinkProps = {
 
 const variantClasses: Record<AppLinkVariant, string> = {
   default: "text-slate-700 transition-colors hover:text-violet-600",
-
   brand: "text-3xl font-extrabold tracking-tight text-violet-600",
-
   nav: "relative py-2 text-sm font-medium text-slate-700 transition-colors hover:text-violet-600",
-
   outlineButton:
     "rounded-xl border border-violet-300 px-5 py-2.5 text-sm font-semibold text-violet-600 transition hover:bg-violet-50",
-
   primaryButton:
     "rounded-xl bg-violet-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-violet-700",
 };

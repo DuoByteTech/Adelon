@@ -1,4 +1,5 @@
 import { HomeHero } from "../components/HomeHero";
+import { HomeLessons } from "../components/HomeLessons";
 import { HomeQuickAccess } from "../components/HomeQuickAccess";
 
 export function HomePage() {
@@ -6,6 +7,7 @@ export function HomePage() {
     <>
       <HomeHero />
       <HomeQuickAccess />
+      <HomeLessons />
     </>
   );
 }
