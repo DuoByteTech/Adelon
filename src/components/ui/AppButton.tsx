@@ -43,7 +43,7 @@ export function AppButton({
   return (
     <button
       className={[
-        "inline-flex items-center justify-center rounded-xl font-semibold",
+        "inline-flex items-center justify-center rounded-full font-semibold cursor-pointer",
         variantClasses[variant],
         sizeClasses[size],
         fullWidth ? "w-full" : "",

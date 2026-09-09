@@ -41,8 +41,8 @@ const lessons = [
 
 export function HomeLessons() {
   return (
-    <section className="py-12">
-      <div className="mb-6 flex items-end justify-between gap-6">
+    <section className="pt-8 sm:pt-12">
+      <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <AppText variant="h3">Dersleri Keşfet</AppText>
 
@@ -52,14 +52,14 @@ export function HomeLessons() {
         </div>
 
         <AppLink to="/dersler">
-          <span className="flex items-center gap-1">
+          <span className="inline-flex items-center gap-1 self-start sm:self-auto">
             Tüm Dersleri Gör
             <ArrowRight size={16} />
           </span>
         </AppLink>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5">
         {lessons.map((lesson) => (
           <HomeLessonCard
             key={lesson.title}
