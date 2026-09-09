@@ -1,3 +1,4 @@
+import { HomeGames } from "../components/HomeGames";
 import { HomeHero } from "../components/HomeHero";
 import { HomeLessons } from "../components/HomeLessons";
 import { HomeMotivationBanner } from "../components/HomeMotivationBanner";
@@ -12,6 +13,7 @@ export function HomePage() {
       <HomeLessons />
       <HomeMotivationBanner />
       <HomeStats />
+      <HomeGames />
     </>
   );
 }

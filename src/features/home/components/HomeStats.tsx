@@ -32,7 +32,7 @@ const stats = [
 
 export function HomeStats() {
   return (
-    <section className="py-12">
+    <section className="pt-12">
       <div className="mx-auto">
         <AppCard className="border-none shadow-sm">
           <div className="grid grid-cols-1 divide-y divide-base-300 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
