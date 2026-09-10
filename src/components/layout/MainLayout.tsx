@@ -1,6 +1,8 @@
 import { Outlet } from "react-router-dom";
 
 import { Header } from "./Header";
+import { Footer } from "./Footer";
+
 import { AppContainer } from "@/components/ui/AppContainer";
 
 export function MainLayout() {
@@ -13,6 +15,8 @@ export function MainLayout() {
           <Outlet />
         </AppContainer>
       </main>
+
+      <Footer />
     </div>
   );
 }

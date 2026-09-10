@@ -52,7 +52,7 @@ export function HomeLessons() {
         </div>
 
         <AppLink to="/dersler">
-          <span className="inline-flex items-center gap-1 self-start sm:self-auto">
+          <span className="inline-flex items-center gap-1 self-start sm:self-auto text-violet-600">
             Tüm Dersleri Gör
             <ArrowRight size={16} />
           </span>

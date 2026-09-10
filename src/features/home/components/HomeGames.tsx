@@ -37,7 +37,7 @@ const games = [
 
 export function HomeGames() {
   return (
-    <section className="pt-8 sm:pt-12">
+    <section className="py-8 sm:py-12">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <AppText variant="h3">Eğitici Oyunlar</AppText>
@@ -48,7 +48,7 @@ export function HomeGames() {
         </div>
 
         <AppLink to="/oyunlar">
-          <span className="inline-flex items-center gap-1 self-start sm:self-auto">
+          <span className="inline-flex items-center gap-1 self-start sm:self-auto text-violet-600">
             Tüm Oyunları Gör
             <ArrowRight size={16} />
           </span>

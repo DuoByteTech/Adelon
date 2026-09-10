@@ -7,7 +7,9 @@ type AppLinkVariant =
   | "nav"
   | "outlineButton"
   | "primaryButton"
-  | "bannerButton";
+  | "bannerButton"
+  | "footer"
+  | "footerBrand";
 
 type AppLinkProps = {
   to: string;
@@ -27,6 +29,9 @@ const variantClasses: Record<AppLinkVariant, string> = {
     "rounded-full bg-violet-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-violet-700",
   bannerButton:
     "inline-flex items-center gap-2 rounded-full bg-violet-600 px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-violet-700",
+  footer:
+    "text-sm font-semibold text-slate-600 transition-colors hover:text-violet-600",
+  footerBrand: "inline-flex flex-col text-violet-600",
 };
 
 export function AppLink({
