@@ -4,7 +4,7 @@ import { AppLink } from "@/components/ui/AppLink";
 export function Header() {
   const navItems = [
     { label: "Ana Sayfa", path: "/" },
-    { label: "Dersler", path: "/dersler" },
+    { label: "Dersler", path: "/dersler/bilisim-teknolojileri" },
     { label: "Oyunlar", path: "/oyunlar" },
     { label: "Notlar", path: "/notlar" },
     { label: "Quiz", path: "/quiz" },
@@ -19,7 +19,12 @@ export function Header() {
 
         <nav className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
-            <AppLink key={item.path} to={item.path} variant="nav">
+            <AppLink
+              key={item.path}
+              to={item.path}
+              variant="nav"
+              end={item.path === "/"}
+            >
               {item.label}
             </AppLink>
           ))}

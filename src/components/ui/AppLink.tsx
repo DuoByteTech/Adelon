@@ -16,13 +16,14 @@ type AppLinkProps = {
   children: ReactNode;
   variant?: AppLinkVariant;
   active?: boolean;
+  end?: boolean;
 };
 
 const variantClasses: Record<AppLinkVariant, string> = {
   default:
     "rounded-full text-slate-700 transition-colors hover:text-violet-600",
   brand: "rounded-full text-3xl font-extrabold tracking-tight text-violet-600",
-  nav: "rounded-full relative py-2 text-sm font-medium text-slate-700 transition-colors hover:text-violet-600",
+  nav: "relative rounded-full py-2 text-sm font-medium text-slate-700 transition-colors hover:text-violet-600",
   outlineButton:
     "rounded-full border border-violet-300 px-5 py-2.5 text-sm font-semibold text-violet-600 transition hover:bg-violet-50",
   primaryButton:
@@ -39,11 +40,13 @@ export function AppLink({
   children,
   variant = "default",
   active = false,
+  end = false,
 }: AppLinkProps) {
   if (variant === "nav") {
     return (
       <NavLink
         to={to}
+        end={end}
         className={({ isActive }) =>
           `${variantClasses.nav} ${isActive ? "text-violet-600" : ""}`
         }
