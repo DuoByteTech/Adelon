@@ -5,12 +5,18 @@ import burstYellowAlt from "@/assets/illustrations/decorations/burst-yellow-alt.
 import sparklePurple from "@/assets/illustrations/decorations/sparkle-purple.png";
 import targetArrow from "@/assets/illustrations/decorations/target-arrow.png";
 
-import { AppLink } from "../../../components/ui/AppLink";
-import { AppText } from "../../../components/ui/AppText";
+import { AppLink } from "@/components/ui/AppLink";
+import { AppText } from "@/components/ui/AppText";
 
-export function HomeMotivationBanner() {
+type LessonActivityBannerProps = {
+  lessonSlug: string;
+};
+
+export function LessonActivityBanner({
+  lessonSlug,
+}: LessonActivityBannerProps) {
   return (
-    <section className="pt-8 sm:pt-12">
+    <section className="pb-10 sm:pb-14">
       <div className="relative overflow-hidden rounded-[20px] border border-violet-100 bg-violet-50 px-5 py-5 shadow-sm sm:px-7 sm:py-4">
         {/* Sol üst mor dekor */}
         <img
@@ -37,8 +43,9 @@ export function HomeMotivationBanner() {
         />
 
         <div className="relative flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+          {/* Sol içerik */}
           <div className="flex items-center gap-4 sm:gap-5">
-            {/* Hedef görseli */}
+            {/* Hedef */}
             <div className="ml-2 flex size-16 shrink-0 items-center justify-center sm:ml-5 sm:size-20">
               <img
                 src={targetArrow}
@@ -48,22 +55,26 @@ export function HomeMotivationBanner() {
               />
             </div>
 
-            {/* Metin */}
+            {/* İçerik */}
             <div className="pr-2">
               <AppText variant="cardTitle">
-                Hedefine Bir Adım Daha Yaklaş!
+                Öğrendiklerini Hemen Uygula!
               </AppText>
 
               <AppText variant="small">
-                Düzenli çalış, öğrendiklerini pekiştir ve başarıya ulaş.
+                Kısa etkinliklerle öğrendiklerini pekiştir ve bilgilerini test
+                et.
               </AppText>
             </div>
           </div>
 
           {/* Buton */}
           <div className="flex justify-end sm:mr-12 sm:block">
-            <AppLink to="/dersler" variant="bannerButton">
-              <span>Hemen Keşfet</span>
+            <AppLink
+              to={`/dersler/${lessonSlug}/etkinlik`}
+              variant="bannerButton"
+            >
+              <span>Mini Etkinliğe Git</span>
 
               <ArrowRight size={17} />
             </AppLink>

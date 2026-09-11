@@ -1,5 +1,7 @@
 import { ArrowRight, Brain, Calculator, Globe2, Languages } from "lucide-react";
 
+import burstYellow from "@/assets/illustrations/decorations/burst-yellow.png";
+
 import { AppLink } from "../../../components/ui/AppLink";
 import { AppText } from "../../../components/ui/AppText";
 import { HomeGameCard } from "./HomeGameCard";
@@ -40,7 +42,16 @@ export function HomeGames() {
     <section className="py-8 sm:py-12">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <AppText variant="h3">Eğitici Oyunlar</AppText>
+          <div className="relative inline-flex items-center">
+            <AppText variant="h3">Eğitici Oyunlar</AppText>
+
+            <img
+              src={burstYellow}
+              alt=""
+              aria-hidden="true"
+              className="pointer-events-none absolute -right-7 -top-3 w-7 -rotate-37 object-contain sm:-right-12 sm:-top-5 sm:w-12"
+            />
+          </div>
 
           <AppText variant="small" className="mt-1">
             Öğrendiklerini eğlenceli oyunlarla pekiştir.
