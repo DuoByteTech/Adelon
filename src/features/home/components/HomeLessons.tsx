@@ -1,46 +1,13 @@
-import {
-  ArrowRight,
-  BookOpenText,
-  Calculator,
-  FlaskConical,
-  Globe2,
-  Languages,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import burstYellow from "@/assets/illustrations/decorations/burst-yellow.png";
 
 import { AppLink } from "../../../components/ui/AppLink";
 import { AppText } from "../../../components/ui/AppText";
 
-import { HomeLessonCard } from "./HomeLessonCard";
+import { lessons } from "../../lessons/data/lessons";
 
-const lessons = [
-  {
-    title: "Matematik",
-    icon: Calculator,
-    variant: "violet",
-  },
-  {
-    title: "Türkçe",
-    icon: BookOpenText,
-    variant: "rose",
-  },
-  {
-    title: "Fen Bilimleri",
-    icon: FlaskConical,
-    variant: "emerald",
-  },
-  {
-    title: "Sosyal Bilgiler",
-    icon: Globe2,
-    variant: "amber",
-  },
-  {
-    title: "İngilizce",
-    icon: Languages,
-    variant: "blue",
-  },
-] as const;
+import { HomeLessonCard } from "./HomeLessonCard";
 
 export function HomeLessons() {
   return (
@@ -74,10 +41,11 @@ export function HomeLessons() {
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5">
         {lessons.map((lesson) => (
           <HomeLessonCard
-            key={lesson.title}
+            key={lesson.slug}
             title={lesson.title}
+            slug={lesson.slug}
             icon={lesson.icon}
-            variant={lesson.variant}
+            variant={lesson.homeVariant}
           />
         ))}
       </div>

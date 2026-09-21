@@ -1,13 +1,15 @@
 import type { LucideIcon } from "lucide-react";
 
-import { AppLink } from "../../../components/ui/AppLink";
-import { AppText } from "../../../components/ui/AppText";
+import { AppLink } from "@/components/ui/AppLink";
+import { AppText } from "@/components/ui/AppText";
 
-type HomeLessonCardProps = {
+import type { HomeLessonVariant } from "../../types/lesson.types";
+
+type LessonCardProps = {
   title: string;
   slug: string;
   icon: LucideIcon;
-  variant: "violet" | "rose" | "emerald" | "amber" | "blue";
+  variant: HomeLessonVariant;
 };
 
 const variantClasses = {
@@ -33,20 +35,20 @@ const variantClasses = {
   },
 };
 
-export function HomeLessonCard({
+export function LessonCard({
   title,
   slug,
   icon: Icon,
   variant,
-}: HomeLessonCardProps) {
+}: LessonCardProps) {
   const styles = variantClasses[variant];
 
   return (
     <AppLink to={`/dersler/${slug}`}>
       <div
         className={[
-          "group flex min-h-32 flex-col items-center justify-center gap-3",
-          "rounded-2xl px-4 py-5 text-center",
+          "group flex min-h-44 flex-col items-center justify-center gap-4",
+          "rounded-3xl px-6 py-8 text-center",
           "transition-all duration-200",
           "hover:-translate-y-1 hover:shadow-md",
           styles.card,
@@ -54,16 +56,16 @@ export function HomeLessonCard({
       >
         <div
           className={[
-            "flex size-12 items-center justify-center rounded-2xl",
+            "flex size-16 items-center justify-center rounded-2xl",
             "text-white shadow-lg transition-transform duration-200",
             "group-hover:scale-105",
             styles.icon,
           ].join(" ")}
         >
-          <Icon size={25} strokeWidth={2.2} />
+          <Icon size={30} strokeWidth={2.2} />
         </div>
 
-        <AppText variant="small">{title}</AppText>
+        <AppText variant="h3">{title}</AppText>
       </div>
     </AppLink>
   );

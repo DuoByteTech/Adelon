@@ -4,7 +4,7 @@ import { AppLink } from "@/components/ui/AppLink";
 export function Header() {
   const navItems = [
     { label: "Ana Sayfa", path: "/" },
-    { label: "Dersler", path: "/dersler/bilisim-teknolojileri" },
+    { label: "Dersler", path: "/dersler" },
     { label: "Oyunlar", path: "/oyunlar" },
     { label: "Notlar", path: "/notlar" },
     { label: "Quiz", path: "/quiz" },
