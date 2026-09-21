@@ -39,10 +39,10 @@ export const lessons: Lesson[] = [
         learningOutcome: "BTY.6.1.1",
 
         presentationUrl:
-          "/lessons/bilisim-teknolojileri/yenilikci-bilisim-teknolojileri/Yenilikci_Bilisim_Teknolojileri_6_Sinif.pptx",
+          "/lessons/yenilikci-bilisim-teknolojileri/Yenilikci_Bilisim_Teknolojileri_6_Sinif.pptx",
 
         pdfUrl:
-          "/lessons/bilisim-teknolojileri/yenilikci-bilisim-teknolojileri/Yenilikci_Bilisim_Teknolojileri_6_Sinif.pdf",
+          "/lessons/yenilikci-bilisim-teknolojileri/Yenilikci_Bilisim_Teknolojileri_6_Sinif.pdf",
       },
     ],
   },

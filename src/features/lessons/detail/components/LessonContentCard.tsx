@@ -45,7 +45,7 @@ export function LessonContentCard({ content }: LessonContentCardProps) {
       <div className="mt-5 flex flex-col gap-2 sm:flex-row">
         <a
           href={content.presentationUrl}
-          download
+          download="Yenilikci_Bilisim_Teknolojileri_6_Sinif.pptx"
           className={[
             "inline-flex flex-1 items-center justify-center gap-1.5",
             "rounded-full bg-violet-600 px-4 py-2",
@@ -60,7 +60,7 @@ export function LessonContentCard({ content }: LessonContentCardProps) {
 
         <a
           href={content.pdfUrl}
-          download
+          download="Yenilikci_Bilisim_Teknolojileri_6_Sinif.pdf"
           className={[
             "inline-flex flex-1 items-center justify-center gap-1.5",
             "rounded-full border border-violet-300 px-4 py-2",
