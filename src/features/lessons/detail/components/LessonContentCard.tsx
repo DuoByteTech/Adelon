@@ -13,14 +13,14 @@ export function LessonContentCard({ content }: LessonContentCardProps) {
     <div
       className={[
         "rounded-3xl border border-slate-200 bg-white",
-        "p-5 shadow-sm sm:p-6",
+        "p-5 shadow-sm",
         "transition-all duration-200",
         "hover:-translate-y-1 hover:shadow-md",
       ].join(" ")}
     >
-      <div className="mb-5 flex items-start justify-between gap-4">
-        <div className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-violet-100 text-violet-600">
-          <Presentation size={28} />
+      <div className="mb-4 flex items-start justify-between gap-4">
+        <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-violet-100 text-violet-600">
+          <Presentation size={24} />
         </div>
 
         <span className="rounded-full bg-violet-50 px-3 py-1 text-xs font-semibold text-violet-600">
@@ -33,6 +33,14 @@ export function LessonContentCard({ content }: LessonContentCardProps) {
       <AppText variant="small" className="mt-2">
         {content.description}
       </AppText>
+
+      <div className="mt-4 flex items-center gap-2 text-xs font-medium text-slate-500">
+        <span>{content.grade}</span>
+
+        <span>•</span>
+
+        <span>Bilişim Teknolojileri</span>
+      </div>
 
       <div className="mt-5 flex flex-col gap-2 sm:flex-row">
         <a

@@ -36,7 +36,6 @@ export const lessons: Lesson[] = [
           "Bilişim teknolojilerini tanıyalım, günlük yaşamla ilişkilendirelim ve kullanım alanlarına göre sınıflandıralım.",
 
         grade: "6. Sınıf",
-
         learningOutcome: "BTY.6.1.1",
 
         presentationUrl:

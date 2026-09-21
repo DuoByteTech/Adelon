@@ -13,7 +13,6 @@ export type LessonContent = {
   description: string;
   grade: string;
   learningOutcome: string;
-
   presentationUrl: string;
   pdfUrl: string;
 };
@@ -29,6 +28,7 @@ export type Lesson = {
   heroTitle: string;
   heroHighlight: string;
   description: string;
+
   primaryButtonText: string;
   secondaryButtonText: string;
 

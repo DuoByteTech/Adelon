@@ -39,7 +39,7 @@ export function LessonContents({ lesson }: LessonContentsProps) {
           </AppText>
         </div>
       ) : (
-        <div className="grid gap-5 lg:grid-cols-3">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {lesson.contents.map((content) => (
             <LessonContentCard key={content.id} content={content} />
           ))}
