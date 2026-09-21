@@ -1,51 +1,50 @@
-import { GraduationCap } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { BookOpenText } from "lucide-react";
 
-import homeHeroImage from "@/assets/images/home/home-hero.png";
+import lessonsHeroImage from "@/assets/images/lessons/lesson-hero.png";
 
 import { AppButton } from "@/components/ui/AppButton";
 import { AppText } from "@/components/ui/AppText";
 
-export function HomeHero() {
-  const navigate = useNavigate();
+export function LessonsHero() {
+  const scrollToLessons = () => {
+    document
+      .getElementById("dersler-listesi")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section className="relative pt-4 sm:pt-6 lg:pt-8 lg:pb-10 xl:pb-0">
       <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
         <div>
           <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-secondary/15 px-4 py-2 text-secondary">
-            <GraduationCap size={20} />
+            <BookOpenText size={20} />
 
             <AppText variant="small" className="font-bold">
-              Eğlenceli İçerikler
+              Derslerini Keşfet
             </AppText>
           </div>
 
           <AppText variant="h1">
-            Öğrenmek Artık Çok Daha{" "}
-            <span className="text-primary">Kolay ve Eğlenceli!</span>
+            Merak Ettiğin Dersleri Keşfet,{" "}
+            <span className="text-primary">Öğrenmeye Başla!</span>
           </AppText>
 
           <AppText variant="muted" className="mt-6 max-w-xl">
-            Dersleri keşfet, notlarını güçlendir, quizlerle kendini dene ve
-            oyunlarla öğrenmeyi keyifli hale getir.
+            Derslerini seç, konu içeriklerini incele ve öğrenmeni destekleyen
+            materyallerle bilgilerini geliştir.
           </AppText>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <AppButton size="lg" onClick={() => navigate("/dersler")}>
-              Dersleri Keşfet
-            </AppButton>
-
-            <AppButton variant="outline" size="lg">
-              Oyunlara Göz At
+            <AppButton size="lg" onClick={scrollToLessons}>
+              Dersleri İncele
             </AppButton>
           </div>
         </div>
 
         <div className="flex justify-center lg:justify-end">
           <img
-            src={homeHeroImage}
-            alt="Öğrenen ve eğlenen öğrenciler"
+            src={lessonsHeroImage}
+            alt="Derslerini keşfeden öğrenciler"
             className="w-full max-w-2xl object-contain"
           />
         </div>

@@ -1,4 +1,5 @@
 import { GraduationCap } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 import { AppButton } from "@/components/ui/AppButton";
 import { AppText } from "@/components/ui/AppText";
@@ -10,6 +11,15 @@ type LessonHeroProps = {
 };
 
 export function LessonHero({ lesson }: LessonHeroProps) {
+  const navigate = useNavigate();
+
+  const scrollToContents = () => {
+    document.getElementById("ders-icerikleri")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <section className="relative pt-4 sm:pt-6 lg:pt-8 lg:pb-10 xl:pb-0">
       <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
@@ -32,9 +42,15 @@ export function LessonHero({ lesson }: LessonHeroProps) {
           </AppText>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <AppButton size="lg">{lesson.primaryButtonText}</AppButton>
+            <AppButton size="lg" onClick={scrollToContents}>
+              {lesson.primaryButtonText}
+            </AppButton>
 
-            <AppButton variant="outline" size="lg">
+            <AppButton
+              variant="outline"
+              size="lg"
+              onClick={() => navigate("/dersler")}
+            >
               {lesson.secondaryButtonText}
             </AppButton>
           </div>
