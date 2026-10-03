@@ -42,6 +42,18 @@ export const lessons: Lesson[] = [
         pdfUrl:
           "/lessons/bilisim-teknolojilerinin-gelecegi/Bilisim_Teknolojilerinin_Gelecegi_6_Sinif.pdf",
       },
+      {
+        id: "tablolama-programlarina-giris",
+        title: "Tablolama Programlarına Giriş",
+        description:
+          "Tablolama programlarını tanıyalım; satır, sütun ve hücre kavramlarını öğrenelim, biçimlendirme, formüller, sıralama, filtreleme ve grafiklerle verileri düzenleyip görselleştirelim.",
+        grade: "6. Sınıf",
+        learningOutcome: "BTY.6.2.1",
+        presentationUrl:
+          "/lessons/tablolama-programlarina-giris/Tablolama_Programlarina_Giris_6_Sinif.pptx",
+        pdfUrl:
+          "/lessons/tablolama-programlarina-giris/Tablolama_Programlarina_Giris_6_Sinif.pdf",
+      },
     ],
   },
 ];
